@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Đếm số từ trong một chuỗi</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    function countStringNumber(str) {
+        var a = str.split(" ").length;
+        console.log(a);
+        if(str === ""){
+            alert("Chuỗi không có từ nào");
+        } else {
+            if (a > 0) {
+                alert("Chuỗi có: " + a + " từ");
+            } else {
+                alert("Chuỗi không có từ nào");
+            }
+        }
+    }
+    var myStr = prompt("Nhập một chuỗi");
+    countStringNumber(myStr);
+</script>
+</body>
+</html>
