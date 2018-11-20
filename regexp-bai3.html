@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Đếm số nguyên âm/phụ âm trong một chuỗi</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    function demNguyenAm(str) {
+        var myRegexp = /[ueoai]/gm;
+        var myArray = str.match(myRegexp);
+        console.log("Số nguyên âm trong chuỗi là: " +myArray.length);
+        var myRegexp1 = /[a-z]/gm;
+        var myArray1 = str.match(myRegexp1);
+        var soPhuAm = myArray1.length - myArray.length;
+        console.log("Số phụ âm trong chuỗi là: " +soPhuAm);
+
+    }
+    var test = prompt("Nhập một chuỗi");
+    demNguyenAm(test);
+</script>
+</body>
+</html>
