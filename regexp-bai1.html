@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kiểm tra định dạng ngày tháng</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    function isThisDayValid(str) {
+        var myDay = /^(0[1-9]|[12]\d|3[01])\/(0[1-9]|1[0-2])\/\d{4}/;
+        if (myDay.test(str)){
+            alert("Ngày/tháng/năm đúng định dạng");
+        } else  {
+            alert("Ngày/tháng/năm không đúng định dạng");
+        }
+    }
+    var testDay = prompt("Nhập ngày tháng năm sinh của bạn");
+    isThisDayValid(testDay);
+</script>
+</body>
+</html>
